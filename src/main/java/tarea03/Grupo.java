@@ -9,15 +9,16 @@ package tarea03;
  * @author Niko
  */
 public class Grupo {
-    
+
     private int numeroGrupo;
     private int numeroEstudiantes;
     private Profesor docente;
-    
-    public String mostrarInfo(){
-    
-        return "El grupo " + this.numeroGrupo + " tiene " + 
-        this.numeroEstudiantes + " estudiantes" + " y su docente es " + docente.getNombre();
+    private Asignatura materia;
+
+    public String mostrarInfo() {
+
+        return "El grupo " + this.numeroGrupo + " tiene "
+                + this.numeroEstudiantes + " estudiantes" + " y su docente es " + docente.getNombre();
     }
 
     public int getNumeroGrupo() {
@@ -43,7 +44,13 @@ public class Grupo {
     public void setDocente(Profesor docente) {
         this.docente = docente;
     }
-    
-    
-    
+
+    public Asignatura getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Asignatura materia) {
+        this.materia = materia;
+    }
+
 }

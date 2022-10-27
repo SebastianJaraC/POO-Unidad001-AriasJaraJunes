@@ -9,16 +9,16 @@ package tarea03;
  * @author Niko
  */
 public class Profesor {
-    
+
     private String nombre;
     private int numeroEstudiantes;
     private double salario;
-    
-     public String mostrarInfo(){
-    
-        return "El nombre del docente es " + this.nombre+ 
-                " tiene un numero de estudiantes de  " + 
-        this.numeroEstudiantes + " y su salario es de " + this.salario;
+
+    public String mostrarInfo() {
+
+        return "El nombre del docente es " + this.nombre
+                + " tiene un numero de estudiantes de  "
+                + this.numeroEstudiantes + " y su salario es de " + this.salario;
     }
 
     public String getNombre() {
@@ -44,6 +44,5 @@ public class Profesor {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
-     
+
 }

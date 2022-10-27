@@ -24,7 +24,6 @@ public class Principal03 {
         var asignatura = new Asignatura();
         
         asignatura.setCodigo("Programacion1");
-        asignatura.setDocente(docente);
         asignatura.setNumeroHoras(160);
         
         var grupo = new Grupo();
@@ -32,8 +31,9 @@ public class Principal03 {
         grupo.setDocente(docente);
         grupo.setNumeroEstudiantes(50);
         grupo.setNumeroGrupo(2);
+        grupo.setMateria(asignatura);
         
-        System.out.println(docente.mostrarInfo());
+        System.out.println(docente.mostrarInfo() );
         System.out.println(asignatura.mostrarInfo());
         System.out.println(grupo.mostrarInfo());
         
@@ -49,8 +49,38 @@ public class Principal03 {
         
         // Inicializacion 
         
-        // Relacion 3 (Grupo / Asignatura / Profesor)---------------------------
+        // Relacion 3 (Pais / Equipo / Jugador)---------------------------
+
+        var equipo = new Equipo();
         
+        equipo.setNombreSeleccion("Federacion Ecuatoriana de futbol");
+        equipo.setNumeroJugadores(25);
+        equipo.setNombreDt("Luis Enrique");
+        
+        var pais = new Pais();
+        
+        pais.setCodigo("ECU");
+        pais.setNombre("Ecuador");
+        pais.setSeleccion(equipo);
+        
+        var jugador = new Jugador();
+        
+        jugador.setNombre("Moises Caicedo");
+        jugador.setSeleccion(equipo);
+        jugador.setSalario(1300);
+        
+        
+        System.out.println(equipo.mostrarInfo());
+        System.out.println(pais.mostrarInfo());
+        System.out.println(jugador.mostrarInfo());
+        
+
+        System.out.println("El jugador se llama: " + jugador.getNombre() +
+                " de la " + equipo.getNombreSeleccion() + " tiene un total de "
+                + equipo.getNumeroJugadores() + " su director tecnico es " 
+                + equipo.getNombreDt()+ " dicha seleccion pertenece al pais "
+                + pais.getNombre()+ " con el codigo " + pais.getCodigo()); 
+                
         
     }
 }
