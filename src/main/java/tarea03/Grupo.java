@@ -13,7 +13,7 @@ public class Grupo {
     private int numeroGrupo;
     private int numeroEstudiantes;
     private Profesor docente;
-    private Asignatura materia;
+    private Asignatura asignatura;
 
     public String mostrarInfo() {
 
@@ -46,11 +46,11 @@ public class Grupo {
     }
 
     public Asignatura getMateria() {
-        return materia;
+        return asignatura;
     }
 
-    public void setMateria(Asignatura materia) {
-        this.materia = materia;
+    public void setMateria(Asignatura asignatura) {
+        this.asignatura = asignatura;
     }
 
 }

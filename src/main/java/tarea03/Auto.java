@@ -9,15 +9,15 @@ package tarea03;
  * @author Niko
  */
 public class Auto {
+
     private String marca;
     private String color;
-    
+
     public String mostrarInfo() {
-        
-        
-      return "La marca del Auto es " + this.marca + " y es de color "
+
+        return "La marca del Auto es " + this.marca + " y es de color "
                 + this.color;
-        
+
     }
 
     public String getMarca() {
@@ -35,9 +35,5 @@ public class Auto {
     public void setColor(String color) {
         this.color = color;
     }
-    
-    
-    
-    
-    
+
 }

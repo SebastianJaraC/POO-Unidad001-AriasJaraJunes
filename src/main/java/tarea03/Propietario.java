@@ -9,14 +9,15 @@ package tarea03;
  * @author Niko
  */
 public class Propietario {
+
     private String nombre;
     private String cedula;
-    
-    public String mostrarInfo(){
-        
-    return "El nombre del propietario es " + this.nombre + " y su cedula es:  "
+
+    public String mostrarInfo() {
+
+        return "El nombre del propietario es " + this.nombre + " y su cedula es:  "
                 + this.cedula;
-           
+
     }
 
     public String getNombre() {
@@ -34,6 +35,5 @@ public class Propietario {
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
-    
-    
+
 }

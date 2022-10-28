@@ -9,17 +9,17 @@ package tarea03;
  * @author Niko
  */
 public class Matricula {
-    
+
     private String NumeroPlaca;
     private Double kilometraje;
     private Propietario nombrePropietario;
-    
+
     public String mostrarInfo() {
-        
-    return "El numero de placa es " + this.NumeroPlaca + " su kilometraje es de: "
+
+        return "El numero de placa es " + this.NumeroPlaca + " su kilometraje es de: "
                 + this.kilometraje + " km " + " y su propietario es: "
-                + nombrePropietario.getNombre();  
-    
+                + nombrePropietario.getNombre();
+
     }
 
     public String getNumeroPlaca() {
@@ -45,6 +45,5 @@ public class Matricula {
     public void setNombrePropietario(Propietario nombrePropietario) {
         this.nombrePropietario = nombrePropietario;
     }
-    
-    
+
 }

@@ -87,16 +87,16 @@ public class Principal03 {
         matricula.setNumeroPlaca("AAO593");
         matricula.setKilometraje(60150.10);
         matricula.setNombrePropietario(propietario);
-        
+
         System.out.println(auto.mostrarInfo());
         System.out.println(matricula.mostrarInfo());
         System.out.println(propietario.mostrarInfo());
-        
+
         System.out.println("El auto es de marca " + auto.getMarca()
                 + " y su color es " + auto.getColor() + " el numero de matricula es "
                 + matricula.getNumeroPlaca() + " y su propietario es "
                 + propietario.getNombre());
-        
+
     }
 
 }

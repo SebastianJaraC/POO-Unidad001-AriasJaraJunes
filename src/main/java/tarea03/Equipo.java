@@ -9,18 +9,19 @@ package tarea03;
  * @author Niko
  */
 public class Equipo {
-    
+
     private int numeroJugadores;
     private String nombreDt;
     private String nombreSeleccion;
 
-     public String mostrarInfo(){
+    public String mostrarInfo() {
 
-        return "El nombre de la seleccion es " + this.nombreSeleccion 
+        return "El nombre de la seleccion es " + this.nombreSeleccion
                 + ", su director tecnico es " + this.nombreDt
-                + " y su numero de jugadores es de: " + this.numeroJugadores ;
-    
-     }
+                + " y su numero de jugadores es de: " + this.numeroJugadores;
+
+    }
+
     public int getNumeroJugadores() {
         return numeroJugadores;
     }
@@ -44,6 +45,5 @@ public class Equipo {
     public void setNombreSeleccion(String nombreSeleccion) {
         this.nombreSeleccion = nombreSeleccion;
     }
-    
-    
+
 }
